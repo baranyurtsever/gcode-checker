@@ -75,7 +75,17 @@ UI = {
     }
 }
 
-st.set_page_config(page_title="G-Code Checker", page_icon="🖨️", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(
+    page_title="G-Code Checker | Advanced 3D Print Analyzer",
+    page_icon="🖨️",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://github.com/kullaniciadin/projen',
+        'Report a bug': "https://github.com/kullaniciadin/projen/issues",
+        'About': "# G-Code Checker\nProfessional G-Code analysis tool with Klipper macro support, speed histograms, and mechanical safety checks."
+    }
+)
 
 # --- CSS: OKUNABİLİRLİK VE BOŞLUK DÜZENLEMELERİ ---
 st.markdown("""
